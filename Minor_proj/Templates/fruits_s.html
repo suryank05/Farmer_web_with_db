@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agriEazz WEBSITE</title>
+    <link rel="stylesheet" href="static/css/style copy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='images/logo.png') }}" width="125px">
+            </div>
+
+            <!------search bar------->
+            <div class="search-1">
+                <input type="text" name="box" placeholder="Search for product">
+                <a href="{{ url_for('static',filename='images/Ambri-Apple.jpg') }}" class="btn-1">Search</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="aboutus_extra.html">About</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="{{ url_for('static',filename='images/cart.png') }}" width="30px" height="30px" alt="">
+            <img src="{{ url_for('static',filename='images/menu.png') }}" class="menu-icon">
+
+        </div>
+
+    </div>
+    <div class="small-container">
+        <h2 class="title">FRUITS</h2>
+        <div class="row">
+        <div class="col-4">
+            <a href="sellingFRUITS.html">
+            <img src="{{ url_for('static',filename='images/apple.jpg') }}">
+
+
+            <h4>Apple</h4>
+        </a>
+        </div>
+
+        <div class="col-4">
+            <a href="sellingFRUITS.html">
+            <img src="{{ url_for('static',filename='images/BANANA.jpg') }}" alt="">
+
+            <h4>Banana</h4>
+        </a>
+
+        </div>
+
+        <div class="col-4">
+            <a href="sellingFRUITS.html">
+            <img src="{{ url_for('static',filename='images/STRAWBERRY.jpg') }}" alt="">
+            <h4>Strawberry</h4>
+        </a>
+
+        </div>
+
+        <div class="col-4">
+            <a href="sellingFRUITS.html">
+            <img src="{{ url_for('static',filename='images/ORANGE.jpg') }}" alt="">
+            <h4>Orange</h4>
+        </a>
+
+        </div>
+
+            <div class="col-4">
+                <a href="sellingFRUITS.html">
+                <img src="{{ url_for('static',filename='images/POMEGRANATE.jpg') }}" alt="">
+                <h4>Pomegranate</h4>
+            </a>
+
+            </div>
+
+            <div class="col-4">
+                <a href="sellingFRUITS.html">
+                <img src="{{ url_for('static',filename='images/GRAPES.jpg') }}" alt="">
+                <h4>Grapes</h4>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="sellingFRUITS.html">
+                <img src="{{ url_for('static',filename='images/watermelon.jpg') }}" alt="">
+                <h4>Watermelon</h4>
+            </a>
+
+            </div>
+
+            <div class="col-4">
+                <a href="sellingFRUITS.html">
+                <img src="{{ url_for('static',filename='images/lichi.webp') }}" alt="">
+                <h4>Litchi</h4>
+            </a>
+            </div>
+
+            </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Buy Now</h3>
+        </div>
+        <div class="footer-col-2">
+            <img src="{{ url_for('static',filename='images/logo.png') }}" alt="">
+            <p>Our purpose is to efficiently make the Pleasure of fresh Farm Produce Available to Many by Benefiting both the Farmers and the Consumers.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - agriEazz</p>
+    </div>
+</div>
+
+</body>
+</html>

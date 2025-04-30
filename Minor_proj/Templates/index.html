@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kissan King WEBSITE</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+
+
+<div class="frontBg">
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static',filename='images/logo.png') }}" width="450px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="aboutus_extra.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+                    <img src="{{ url_for('static',filename='images/cart.png') }}" width="30px" height="30px" alt="">
+                    <img src="{{ url_for('static',filename='images/menu.png') }}" class="menu-icon">
+    </div>
+
+    <center>
+        <b>Kissan King</b>
+        <h1>Know Your Farmer,<br>Know Your Food!</h1>
+        <p>Patronize your local farmers instead of chain Intermediates,<br>help farmers market themselves.</p>
+        <a href="{{ url_for('login_B') }}" class="btn">Buyer</a>
+        <a href="{{ url_for('login_S') }}" class="btn">Farmer</a>
+    </center>
+
+</div>
+
+</body>
+</html>

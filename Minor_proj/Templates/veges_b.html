@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables-agriEazz</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+
+            <!------search bar------->
+            <div class="search-1">
+                <input type="text" name="box" placeholder="Search for product">
+                <a href="fruits_apple.html"class="btn-1">Search</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" hieght="30px" alt="">
+            <img src="images/menu.png" class="menu-icon">
+
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-3">
+            <h3>All products</h3>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by populatrity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.webp" alt="">
+            <h4>Onions</h4>
+            <p>min rate: &#8377 29/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <a href="{{ url_for('veges_potatos') }}"><img src="images/product-2.jpg" alt="">
+            </a>
+            <h4>Potatoes</h4>
+            <p>min rate: &#8377 60/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/carrot.webp" alt="">
+            <h4>Carrot</h4>
+            <p>min rate: &#8377 171/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/drumsticks.jpg" alt="">
+            <h4>Drumsticks</h4>
+            <p>min rate: &#8377 147/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/brinjal.jpeg" alt="">
+            <h4>Brinjal</h4>
+            <p>min rate: &#8377 29/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/ladyfinger.jpg" alt="">
+            <h4>Ladyfinger</h4>
+            <p>min rate: &#8377 60/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/peas.jpeg" alt="">
+            <h4>Peas</h4>
+            <p>min rate: &#8377 260/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/spinach.jpg" alt="">
+            <h4>Spinach</h4>
+            <p>min rate: &#8377 147/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/tomatoes.jpg" alt="">
+            <h4>Tomato</h4>
+            <p>min rate: &#8377 29/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-5.jpg" alt="">
+            <h4>Brocolli</h4>
+            <p>min rate: &#8377 60/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-6.jpg" alt="">
+            <h4>Jalepeno</h4>
+            <p>min rate: &#8377 260/kg<br>&#9733 &#9733 &#9733 &#9733 &#9734</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-8.webp" alt="">
+            <h4>Avacodo</h4>
+            <p>min rate: &#8377 147/kg<br>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+
+    </div>
+    </div>
+</div>
+
+<!----footer---->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Buy Now</h3>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/logo.png" alt="">
+            <p>Our purpose is to efficiently make the Pleasure of fresh Farm Produce Available to Many by Benefiting both the Farmers and the Consumers.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - agriEazz</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agriEazz Buyer Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style2.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+<div class="frontBg">
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static',filename='images/logo.png') }}" width="450px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="{{ url_for('about_us') }}">About</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+        <img src="{{ url_for('static',filename='images/cart.png') }}" width="30px" height="30px" alt="">
+        <img src="{{ url_for('static',filename='images/menu.png') }}" class="menu-icon">
+    </div>
+
+    <div class="signup-box">
+        <h1>Sign Up As Buyer</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form method="POST" action="{{ url_for('register_B') }}">
+            {{ form.hidden_tag() }}
+
+            <label for="name">{{ form.name.label }}</label>
+            {{ form.name }}
+
+            <label for="password">{{ form.password.label }}</label>
+            {{ form.password }}
+
+            {{ form.submit() }}
+        </form>
+
+        <p>By clicking the Sign-Up button, you agree to our <br>terms and conditions and privacy policy.</p>
+    </div>
+
+    <br>
+    <p class="para-2">Already have an account? <a href="{{ url_for('login_B') }}">Login here</a></p>
+</div>
+
+</body>
+</html>
